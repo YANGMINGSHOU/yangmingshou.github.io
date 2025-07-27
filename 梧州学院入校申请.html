@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>入校申请详情</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #fff;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      position: relative; /* 关键：让印章能定位在容器内 */
+    }
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .return-btn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      color: #007bff;
+      text-decoration: none;
+    }
+    .info-item {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    /* 身份证照片样式 */
+    .id-card {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin: 10px 0;
+      display: block;
+    }
+    /* 审核通过印章样式 */
+    .stamp {
+      position: absolute;
+      right: 30px;   /* 距离右侧位置 */
+      top: 50px;     /* 距离顶部位置 */
+      width: 150px;  /* 印章大小 */
+      height: 150px;
+      background: url('https://i.ibb.co/vx1tRHp3/approval-stamp.png') no-repeat center;
+      background-size: 100% 100%; /* 填满容器 */
+      transform: rotate(-10deg); /* 轻微旋转更自然 */
+      z-index: 10;   /* 确保在其他内容上方显示 */
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="#" class="return-btn">返回</a>
+    <div class="title">杨明授的入校申请</div>
+    
+    <!-- 审核通过印章（放在这里确保显示在顶部） -->
+    <div class="stamp"></div>
+    
+    <div class="info-item">姓名：杨明授</div>
+    <div class="info-item">性别：男</div>
+    <div class="info-item">电话：18077746786</div>
+    <div class="info-item">身份证号：450881200112060879</div>
+    <div class="info-item">单位及职务：学生</div>
+    <div class="info-item">证明照片：</div>
+    
+    <!-- 身份证照片 -->
+    <img 
+      src="https://i.ibb.co/MkjkvN44/c679014eae666e9631af2636a812e1a.jpg" 
+      alt="身份证照片" 
+      class="id-card"
+    >
+    
+    <div class="info-item">到访部门：管理学院</div>
+    <div class="info-item" style="color: green;">
+      入校期限：2025-07-25 至 2025-9-01
+    </div>
+    <div class="info-item">车牌号：A042039 </div>
+    <div class="info-item">审批进度：审核通过</div> <!-- 已改为“审核通过” -->
+    
+    <table>
+      <thead>
+        <tr>
+          <th>姓名</th>
+          <th>电话</th>
+          <th>身份证号</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="3" style="text-align: center;">暂无数据</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="info-item">审核人：邬策</div>
+    <div class="info-item">申请时间：2025-07-23 12:01:21</div>
+    <div class="info-item">审核时间：2025-07-25 13:27:46</div>
+    <div class="info-item">来访事由：担任就业助理所需</div>
+    <div class="info-item">审核备注：</div>
+  </div>
+</body>
+</html>
